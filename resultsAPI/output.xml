@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.2.2 (Python 3.9.0 on win32)" generated="20210616 22:58:07.062" rpa="false">
+<robot generator="Robot 3.2.2 (Python 3.9.0 on win32)" generated="20210616 22:59:55.998" rpa="false">
 <suite id="s1" name="testCase" source="C:\Users\iaris\Documents\Pretest-Engineer\testCase">
 <suite id="s1-s1" name="API" source="C:\Users\iaris\Documents\Pretest-Engineer\testCase\API.robot">
 <test id="s1-s1-t1" name="GET To make sure this end-point have a correct data-type below">
@@ -11,7 +11,7 @@
 <arguments>
 <arg>https://jsonplaceholder.typicode.com/posts</arg>
 </arguments>
-<status status="PASS" starttime="20210616 22:58:07.775" endtime="20210616 22:58:08.659"></status>
+<status status="PASS" starttime="20210616 22:59:56.732" endtime="20210616 22:59:57.607"></status>
 </kw>
 <kw name="Array" library="REST">
 <tags>
@@ -21,7 +21,7 @@
 <arguments>
 <arg>response body</arg>
 </arguments>
-<status status="PASS" starttime="20210616 22:58:08.660" endtime="20210616 22:58:08.671"></status>
+<status status="PASS" starttime="20210616 22:59:57.608" endtime="20210616 22:59:57.618"></status>
 </kw>
 <kw name="Integer" library="REST">
 <tags>
@@ -31,7 +31,7 @@
 <arguments>
 <arg>$[0].userId</arg>
 </arguments>
-<status status="PASS" starttime="20210616 22:58:08.672" endtime="20210616 22:58:08.746"></status>
+<status status="PASS" starttime="20210616 22:59:57.618" endtime="20210616 22:59:57.696"></status>
 </kw>
 <kw name="Integer" library="REST">
 <tags>
@@ -41,7 +41,7 @@
 <arguments>
 <arg>$[0].id</arg>
 </arguments>
-<status status="PASS" starttime="20210616 22:58:08.748" endtime="20210616 22:58:08.797"></status>
+<status status="PASS" starttime="20210616 22:59:57.697" endtime="20210616 22:59:57.743"></status>
 </kw>
 <kw name="String" library="REST">
 <tags>
@@ -51,7 +51,7 @@
 <arguments>
 <arg>$[0].title</arg>
 </arguments>
-<status status="PASS" starttime="20210616 22:58:08.798" endtime="20210616 22:58:08.847"></status>
+<status status="PASS" starttime="20210616 22:59:57.744" endtime="20210616 22:59:57.789"></status>
 </kw>
 <kw name="String" library="REST">
 <tags>
@@ -61,7 +61,7 @@
 <arguments>
 <arg>$[0].body</arg>
 </arguments>
-<status status="PASS" starttime="20210616 22:58:08.848" endtime="20210616 22:58:08.899"></status>
+<status status="PASS" starttime="20210616 22:59:57.790" endtime="20210616 22:59:57.838"></status>
 </kw>
 <kw name="Output Schema" library="REST">
 <tags>
@@ -71,7 +71,7 @@
 <arguments>
 <arg>response body</arg>
 </arguments>
-<msg timestamp="20210616 22:58:08.902" level="INFO">
+<msg timestamp="20210616 22:59:57.842" level="INFO">
 {
     "type": "array",
     "items": [
@@ -785,9 +785,9 @@
         ]
     ]
 }</msg>
-<status status="PASS" starttime="20210616 22:58:08.899" endtime="20210616 22:58:09.109"></status>
+<status status="PASS" starttime="20210616 22:59:57.839" endtime="20210616 22:59:58.051"></status>
 </kw>
-<status status="PASS" starttime="20210616 22:58:07.774" endtime="20210616 22:58:09.111" critical="yes"></status>
+<status status="PASS" starttime="20210616 22:59:56.731" endtime="20210616 22:59:58.055" critical="yes"></status>
 </test>
 <test id="s1-s1-t2" name="POST To make sure this end-point get a correct response compare with the input data">
 <kw name="POST" library="REST">
@@ -799,7 +799,7 @@
 <arg>https://jsonplaceholder.typicode.com/posts</arg>
 <arg>${json}</arg>
 </arguments>
-<status status="PASS" starttime="20210616 22:58:09.116" endtime="20210616 22:58:10.177"></status>
+<status status="PASS" starttime="20210616 22:59:58.092" endtime="20210616 22:59:59.153"></status>
 </kw>
 <kw name="Integer" library="REST">
 <tags>
@@ -810,7 +810,7 @@
 <arg>response status</arg>
 <arg>201</arg>
 </arguments>
-<status status="PASS" starttime="20210616 22:58:10.178" endtime="20210616 22:58:10.179"></status>
+<status status="PASS" starttime="20210616 22:59:59.154" endtime="20210616 22:59:59.155"></status>
 </kw>
 <kw name="Output Schema" library="REST">
 <tags>
@@ -820,7 +820,7 @@
 <arguments>
 <arg>response body</arg>
 </arguments>
-<msg timestamp="20210616 22:58:10.180" level="INFO">
+<msg timestamp="20210616 22:59:59.156" level="INFO">
 {
     "type": "object",
     "properties": {
@@ -848,13 +848,13 @@
         "title"
     ]
 }</msg>
-<status status="PASS" starttime="20210616 22:58:10.180" endtime="20210616 22:58:10.186"></status>
+<status status="PASS" starttime="20210616 22:59:59.155" endtime="20210616 22:59:59.162"></status>
 </kw>
-<status status="PASS" starttime="20210616 22:58:09.114" endtime="20210616 22:58:10.187" critical="yes"></status>
+<status status="PASS" starttime="20210616 22:59:58.071" endtime="20210616 22:59:59.163" critical="yes"></status>
 </test>
-<status status="PASS" starttime="20210616 22:58:07.111" endtime="20210616 22:58:10.189"></status>
+<status status="PASS" starttime="20210616 22:59:56.050" endtime="20210616 22:59:59.165"></status>
 </suite>
-<status status="PASS" starttime="20210616 22:58:07.064" endtime="20210616 22:58:10.194"></status>
+<status status="PASS" starttime="20210616 22:59:56.002" endtime="20210616 22:59:59.170"></status>
 </suite>
 <statistics>
 <total>
