@@ -3,7 +3,7 @@ Library     REST
 
 
 *** Variables ***
-${json}         { "title": "recommendation", "body": "motorcycle", "UserId": "12" }
+${json}         { "title": "recommendation", "body": "motorcycle", "UserId": 12 }
 
 
 *** Test Cases ***
