@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.2.2 (Python 3.9.0 on win32)" generated="20210616 22:56:07.738" rpa="false">
+<robot generator="Robot 3.2.2 (Python 3.9.0 on win32)" generated="20210616 22:58:07.062" rpa="false">
 <suite id="s1" name="testCase" source="C:\Users\iaris\Documents\Pretest-Engineer\testCase">
-<suite id="s1-s1" name="Test" source="C:\Users\iaris\Documents\Pretest-Engineer\testCase\Test.robot">
+<suite id="s1-s1" name="API" source="C:\Users\iaris\Documents\Pretest-Engineer\testCase\API.robot">
 <test id="s1-s1-t1" name="GET To make sure this end-point have a correct data-type below">
 <kw name="GET" library="REST">
 <tags>
@@ -11,7 +11,7 @@
 <arguments>
 <arg>https://jsonplaceholder.typicode.com/posts</arg>
 </arguments>
-<status status="PASS" starttime="20210616 22:56:08.476" endtime="20210616 22:56:09.344"></status>
+<status status="PASS" starttime="20210616 22:58:07.775" endtime="20210616 22:58:08.659"></status>
 </kw>
 <kw name="Array" library="REST">
 <tags>
@@ -21,7 +21,7 @@
 <arguments>
 <arg>response body</arg>
 </arguments>
-<status status="PASS" starttime="20210616 22:56:09.345" endtime="20210616 22:56:09.356"></status>
+<status status="PASS" starttime="20210616 22:58:08.660" endtime="20210616 22:58:08.671"></status>
 </kw>
 <kw name="Integer" library="REST">
 <tags>
@@ -31,7 +31,7 @@
 <arguments>
 <arg>$[0].userId</arg>
 </arguments>
-<status status="PASS" starttime="20210616 22:56:09.357" endtime="20210616 22:56:09.432"></status>
+<status status="PASS" starttime="20210616 22:58:08.672" endtime="20210616 22:58:08.746"></status>
 </kw>
 <kw name="Integer" library="REST">
 <tags>
@@ -41,7 +41,7 @@
 <arguments>
 <arg>$[0].id</arg>
 </arguments>
-<status status="PASS" starttime="20210616 22:56:09.433" endtime="20210616 22:56:09.484"></status>
+<status status="PASS" starttime="20210616 22:58:08.748" endtime="20210616 22:58:08.797"></status>
 </kw>
 <kw name="String" library="REST">
 <tags>
@@ -51,7 +51,7 @@
 <arguments>
 <arg>$[0].title</arg>
 </arguments>
-<status status="PASS" starttime="20210616 22:56:09.485" endtime="20210616 22:56:09.535"></status>
+<status status="PASS" starttime="20210616 22:58:08.798" endtime="20210616 22:58:08.847"></status>
 </kw>
 <kw name="String" library="REST">
 <tags>
@@ -61,7 +61,7 @@
 <arguments>
 <arg>$[0].body</arg>
 </arguments>
-<status status="PASS" starttime="20210616 22:56:09.536" endtime="20210616 22:56:09.587"></status>
+<status status="PASS" starttime="20210616 22:58:08.848" endtime="20210616 22:58:08.899"></status>
 </kw>
 <kw name="Output Schema" library="REST">
 <tags>
@@ -71,7 +71,7 @@
 <arguments>
 <arg>response body</arg>
 </arguments>
-<msg timestamp="20210616 22:56:09.592" level="INFO">
+<msg timestamp="20210616 22:58:08.902" level="INFO">
 {
     "type": "array",
     "items": [
@@ -785,9 +785,9 @@
         ]
     ]
 }</msg>
-<status status="PASS" starttime="20210616 22:56:09.588" endtime="20210616 22:56:09.798"></status>
+<status status="PASS" starttime="20210616 22:58:08.899" endtime="20210616 22:58:09.109"></status>
 </kw>
-<status status="PASS" starttime="20210616 22:56:08.475" endtime="20210616 22:56:09.799" critical="yes"></status>
+<status status="PASS" starttime="20210616 22:58:07.774" endtime="20210616 22:58:09.111" critical="yes"></status>
 </test>
 <test id="s1-s1-t2" name="POST To make sure this end-point get a correct response compare with the input data">
 <kw name="POST" library="REST">
@@ -799,7 +799,7 @@
 <arg>https://jsonplaceholder.typicode.com/posts</arg>
 <arg>${json}</arg>
 </arguments>
-<status status="PASS" starttime="20210616 22:56:09.804" endtime="20210616 22:56:10.939"></status>
+<status status="PASS" starttime="20210616 22:58:09.116" endtime="20210616 22:58:10.177"></status>
 </kw>
 <kw name="Integer" library="REST">
 <tags>
@@ -810,7 +810,7 @@
 <arg>response status</arg>
 <arg>201</arg>
 </arguments>
-<status status="PASS" starttime="20210616 22:56:10.940" endtime="20210616 22:56:10.941"></status>
+<status status="PASS" starttime="20210616 22:58:10.178" endtime="20210616 22:58:10.179"></status>
 </kw>
 <kw name="Output Schema" library="REST">
 <tags>
@@ -820,7 +820,7 @@
 <arguments>
 <arg>response body</arg>
 </arguments>
-<msg timestamp="20210616 22:56:10.942" level="INFO">
+<msg timestamp="20210616 22:58:10.180" level="INFO">
 {
     "type": "object",
     "properties": {
@@ -848,87 +848,24 @@
         "title"
     ]
 }</msg>
-<status status="PASS" starttime="20210616 22:56:10.942" endtime="20210616 22:56:10.948"></status>
+<status status="PASS" starttime="20210616 22:58:10.180" endtime="20210616 22:58:10.186"></status>
 </kw>
-<status status="PASS" starttime="20210616 22:56:09.802" endtime="20210616 22:56:10.949" critical="yes"></status>
+<status status="PASS" starttime="20210616 22:58:09.114" endtime="20210616 22:58:10.187" critical="yes"></status>
 </test>
-<test id="s1-s1-t3" name="POST Error To make sure this end-point get a correct response compare with the input data">
-<kw name="POST" library="REST">
-<tags>
-<tag>http</tag>
-</tags>
-<doc>*Sends a POST request to the endpoint.*</doc>
-<arguments>
-<arg>https://jsonplaceholder.typicode.com/posts</arg>
-<arg>${jsonError}</arg>
-</arguments>
-<status status="PASS" starttime="20210616 22:56:10.952" endtime="20210616 22:56:12.087"></status>
-</kw>
-<kw name="Integer" library="REST">
-<tags>
-<tag>assertions</tag>
-</tags>
-<doc>*Asserts the field as JSON integer.*</doc>
-<arguments>
-<arg>response status</arg>
-<arg>201</arg>
-</arguments>
-<status status="PASS" starttime="20210616 22:56:12.088" endtime="20210616 22:56:12.089"></status>
-</kw>
-<kw name="Output Schema" library="REST">
-<tags>
-<tag>I/O</tag>
-</tags>
-<doc>*Outputs JSON Schema to terminal or a file.*</doc>
-<arguments>
-<arg>response body</arg>
-</arguments>
-<msg timestamp="20210616 22:56:12.089" level="INFO">
-{
-    "type": "object",
-    "properties": {
-        "title": {
-            "type": "integer",
-            "default": 12
-        },
-        "body": {
-            "type": "integer",
-            "default": 12
-        },
-        "UserId": {
-            "type": "integer",
-            "default": 12
-        },
-        "id": {
-            "type": "integer",
-            "default": 101
-        }
-    },
-    "required": [
-        "UserId",
-        "body",
-        "id",
-        "title"
-    ]
-}</msg>
-<status status="PASS" starttime="20210616 22:56:12.089" endtime="20210616 22:56:12.096"></status>
-</kw>
-<status status="PASS" starttime="20210616 22:56:10.951" endtime="20210616 22:56:12.097" critical="yes"></status>
-</test>
-<status status="PASS" starttime="20210616 22:56:07.792" endtime="20210616 22:56:12.099"></status>
+<status status="PASS" starttime="20210616 22:58:07.111" endtime="20210616 22:58:10.189"></status>
 </suite>
-<status status="PASS" starttime="20210616 22:56:07.742" endtime="20210616 22:56:12.105"></status>
+<status status="PASS" starttime="20210616 22:58:07.064" endtime="20210616 22:58:10.194"></status>
 </suite>
 <statistics>
 <total>
-<stat pass="3" fail="0">Critical Tests</stat>
-<stat pass="3" fail="0">All Tests</stat>
+<stat pass="2" fail="0">Critical Tests</stat>
+<stat pass="2" fail="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="3" fail="0" id="s1" name="testCase">testCase</stat>
-<stat pass="3" fail="0" id="s1-s1" name="Test">testCase.Test</stat>
+<stat pass="2" fail="0" id="s1" name="testCase">testCase</stat>
+<stat pass="2" fail="0" id="s1-s1" name="API">testCase.API</stat>
 </suite>
 </statistics>
 <errors>
