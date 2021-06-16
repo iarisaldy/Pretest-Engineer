@@ -34,3 +34,4 @@ POST To make sure this end-point get a correct response compare with the input d
 #     POST    https://jsonplaceholder.typicode.com/posts  ${json}
 #     Integer     response status           200
 #     Output schema  response body
+
