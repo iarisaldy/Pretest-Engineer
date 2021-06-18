@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.2 (Python 3.9.0 on win32)" generated="20210618 18:23:25.554" rpa="false">
+<suite id="s1" name="Website" source="C:\Users\iaris\Documents\Pretest-Engineer\testCase\Website.robot">
+<test id="s1-t1" name="Register">
+<kw name="Open bukalapak">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+</arguments>
+<msg timestamp="20210618 18:23:25.961" level="INFO">Opening browser 'chrome' to base url 'https://www.bukalapak.com/'.</msg>
+<status status="PASS" starttime="20210618 18:23:25.960" endtime="20210618 18:23:36.498"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20210618 18:23:36.498" endtime="20210618 18:23:37.171"></status>
+</kw>
+<status status="PASS" starttime="20210618 18:23:25.959" endtime="20210618 18:23:37.171"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//div[@id='vm__white-header-dweb']/section/header/div[3]/div/div/div[2]/div/a/p</arg>
+</arguments>
+<msg timestamp="20210618 18:23:37.172" level="INFO">Clicking element 'xpath=//div[@id='vm__white-header-dweb']/section/header/div[3]/div/div/div[2]/div/a/p'.</msg>
+<status status="PASS" starttime="20210618 18:23:37.172" endtime="20210618 18:23:39.189"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20210618 18:23:39.190" endtime="20210618 18:23:41.786"></status>
+</kw>
+<status status="PASS" starttime="20210618 18:23:25.958" endtime="20210618 18:23:41.787" critical="yes"></status>
+</test>
+<test id="s1-t2" name="Login">
+<kw name="Open bukalapak">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+</arguments>
+<msg timestamp="20210618 18:23:41.791" level="INFO">Opening browser 'chrome' to base url 'https://www.bukalapak.com/'.</msg>
+<status status="PASS" starttime="20210618 18:23:41.791" endtime="20210618 18:23:52.465"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20210618 18:23:52.466" endtime="20210618 18:23:53.176"></status>
+</kw>
+<status status="PASS" starttime="20210618 18:23:41.790" endtime="20210618 18:23:53.177"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//div[@id='vm__white-header-dweb']/section/header/div[3]/div/div/div[2]/div/a[2]/p</arg>
+</arguments>
+<msg timestamp="20210618 18:23:53.183" level="INFO">Clicking element 'xpath=//div[@id='vm__white-header-dweb']/section/header/div[3]/div/div/div[2]/div/a[2]/p'.</msg>
+<status status="PASS" starttime="20210618 18:23:53.183" endtime="20210618 18:23:54.750"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20210618 18:23:54.751" endtime="20210618 18:23:57.215"></status>
+</kw>
+<status status="PASS" starttime="20210618 18:23:41.789" endtime="20210618 18:23:57.216" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20210618 18:23:25.558" endtime="20210618 18:23:57.219"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0">Critical Tests</stat>
+<stat pass="2" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="0" id="s1" name="Website">Website</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
