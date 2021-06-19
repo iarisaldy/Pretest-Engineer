@@ -67,6 +67,7 @@ Add to Cart
     click Element   xpath=(.//*[normalize-space(text()) and normalize-space(.)='Lihat BukaMall'])[1]/following::*[name()='svg'][3]
     mouse over      xpath=//section[@id='product-explorer-container']/div/div/div[2]/div/div[2]/div[3]/div/div/div/div/div[2]
     click Element   xpath=//section[@id='product-explorer-container']/div/div/div[2]/div/div[2]/div[3]/div/div/div/div/div[3]/div/button/span/div
+    sleep    5s
     capture page screenshot
     close browser 
 
