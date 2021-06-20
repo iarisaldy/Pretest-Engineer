@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.2 (Python 3.9.0 on win32)" generated="20210621 01:54:51.826" rpa="false">
+<suite id="s1" name="Apps" source="C:\Users\iaris\Documents\Pretest-Engineer\testCase\Apps.robot">
+<test id="s1-t1" name="Open Application">
+<kw name="Open Application" library="AppiumLibrary">
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |</doc>
+<arguments>
+<arg>http://localhost:4723/wd/hub</arg>
+<arg>platformName=Android</arg>
+<arg>platformVersion=8.1.0</arg>
+<arg>deviceName=cd47883e</arg>
+<arg>appPackage=Login Register</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20210621 01:55:02.109" level="FAIL">No application is open</msg>
+<status status="FAIL" starttime="20210621 01:55:02.105" endtime="20210621 01:55:02.110"></status>
+</kw>
+<msg timestamp="20210621 01:55:02.111" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20210621 01:55:02.115" level="FAIL">WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: 'app' option is required for reinstall
+</msg>
+<status status="FAIL" starttime="20210621 01:54:52.349" endtime="20210621 01:55:02.116"></status>
+</kw>
+<status status="FAIL" starttime="20210621 01:54:52.348" endtime="20210621 01:55:02.116" critical="yes">WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: 'app' option is required for reinstall
+</status>
+</test>
+<status status="FAIL" starttime="20210621 01:54:51.830" endtime="20210621 01:55:02.119"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1">Critical Tests</stat>
+<stat pass="0" fail="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" id="s1" name="Apps">Apps</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20210621 01:55:02.111" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+</errors>
+</robot>
