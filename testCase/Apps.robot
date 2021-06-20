@@ -1,5 +1,6 @@
 *** Settings ***
 Library  AppiumLibrary
+#doc https://serhatbolsu.github.io/robotframework-appiumlibrary/AppiumLibrary.html#Open%20Application
 
 *** Test Cases ***
 Open Application
